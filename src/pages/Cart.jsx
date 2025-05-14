@@ -61,7 +61,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                 <img src={EmptyCart} alt="" className="cart__empty--img" />
                 <h2>You don't have any books in your cart!</h2>
                 <Link to="/books">
-                <button className="btn"></button>
+                <button className="btn">Browse books</button>
                 </Link>
               </div>)
               }
@@ -77,8 +77,8 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                 <span>${(total() * 0.1).toFixed(2)}</span>
               </div>
               <div className="total__item total__price">
-                <span>Tax</span>
-                <span>${total()}</span>
+                <span>Total</span>
+                <span>${(total()).toFixed(2)}</span>
               </div>
               <button
                 className="btn btn__checkout no-cursor"
