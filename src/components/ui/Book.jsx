@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import Rating from "./Rating";
 import Price from "./Price";
+// debugging
 
 const Book = ({ book }) => {
   const [img, setImg] = useState();
